@@ -4,7 +4,7 @@ import re,np
 window =tk.Tk()
 
 window.title("Python Calculator")
-window.minsize(600,400)
+window.minsize(10,50)
 
 def clickMe():
     text = open(input.get())
@@ -22,7 +22,7 @@ label = ttk.Label(window, text = "Enter your path: ")
 label.grid(column = 0, row=0)
 
 input = tk.StringVar()
-pathInput = ttk.Entry(window, width=100, textvariable= input)
+pathInput = ttk.Entry(window, width=50, textvariable= input)
 pathInput.grid(column=0, row=1)
 
 button = ttk.Button(window, text = "Calculate", command = clickMe)
