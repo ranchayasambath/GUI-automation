@@ -17,9 +17,10 @@ def clickMe():
             lineVal = (sum(map(int, match))*8096)/1000000
             final.append(lineVal)
     label.configure(text= ("Final sum = {: ,} ".format(int(np.sum(final))) + "MB") )
-
+    input.set('')
 label = ttk.Label(window, text = "Enter your path: ")
 label.grid(column = 0, row=0)
+
 
 input = tk.StringVar()
 pathInput = ttk.Entry(window, width=50, textvariable= input)
